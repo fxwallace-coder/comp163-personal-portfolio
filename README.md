@@ -7,60 +7,60 @@ A personal portfolio- Comp163
 
 # 1. Personal Information (Strings)
 
-full_name = "Jordan Smith"
-student_email = "jsmith@ncat.edu"
-hometown = "Charlotte, NC"
-graduation_semester = "Spring 2028"
+full_name = "Fred Wallace"
+student_email = "fxwallace@ncat.edu"
+hometown = "Watertown, NY"
+graduation_semester = "Spring 2029"
 major = "Computer Science"
 
 
 # 2. Academic Data (Lists)
 
-current_courses = ["COMP 163", "MATH 150", "ENG 101", "HIS 105"]
-completed_courses = ["Biology", "Chemistry", "Calculus", "Spanish II", "World History"]
-credit_hours = [3, 3, 3, 3]  # credit hours for current courses
-gpa_history = [3.2, 3.6, 3.4, 3.7]  # semester GPAs
+current_courses = ["COMP 163", "MATH 131", "ENG 101", "Comp 121","SPCH 250","GEEN 111"]
+completed_courses = ["African American Studies","US History"]
+credit_hours = [1, 1, 3, 3, 4, 3]  # credit hours for current courses
+gpa_history = [4.0]  # semester GPAs
 
 
 # 3. Contact Info (Tuples)
 
-emergency_contact = ("Mom", "Hannah Smith", "704-555-0199")
-home_address = ("456 Oak Street", "Charlotte, NC", "28202")
-instagram_info = ("Instagram", "@jordan_codes", 312)
-twitter_info = ("Twitter", "@jordandev", 127)
-birthday = ("Birthday", 5, 22, 2006)
+emergency_contact = ("Mom", "Terri Wallace", "910-261-5223")
+home_address = ("1112 Shebly PL SE", "Atlanta, GA", "28202")
+instagram_info = ("Instagram", "@_.fred_x", 312)
+twitter_info = ("Twitter", "@N/A", 127)
+birthday = ("Birthday", 8, 22, 2007)
 
 
 # 4. Interests (Sets)
 
-current_skills = {"Python basics", "HTML", "Problem solving", "Time management", "Photography"}
+current_skills = {"Python basics", , "Problem solving", "Time management", "Photography"}
 skills_to_learn = {"JavaScript", "Data structures", "Git", "Web design", "Public speaking"}
-career_interests = {"Software development", "Web development", "Data science", "Game development"}
-hobbies = {"Gaming", "Photography", "Reading", "Soccer", "Music"}
-entertainment_backlog = {"One Piece", "Barry", "Life", "Incantation", "Memento"}
+career_interests = {"Software development", "Web development", "Game development"}
+hobbies = {"Gaming", "Photography", "Soccer", "Music"}
+entertainment_backlog = {"One Piece", "Naruto"}
 
 
 # 5. Organizational Mapping
 
-course_credits = {"COMP 163": 3, "MATH 150": 3, "ENG 101": 3, "HIS 105": 3}
-course_professors = {"COMP 163": "Prof. Rhodes", "MATH 150": "Dr. Lee", "ENG 101": "Dr. Martinez", "HIS 105": "Dr. Brown"}
-course_rooms = {"COMP 163": "M-Eric 300", "MATH 150": "Marteena 201","ENG 101": "Crosby 121", "HIS 105": "Crosby 210"}
+course_credits = {"COMP 163": 3, "MATH 131": 4, "ENG 100": 3, "SPCH 250": 3,"COMP 121": 1, "GEEN 111":1}
+course_professors = {"COMP 163": "Prof. Rhodes", "MATH 131": "Prof. Terkper", "ENG 101": "Prof. S.Rhodes", "SPCH 250": "Prof.Chavis","COMP 121": "Prof. Rhodes","GEEN 111": "Prof. Parrish"}
+course_rooms = {"COMP 163": "M-Eric 300", "MATH 131": "Crobsy 106","ENG 101": "Merrick 327", "SPCH 250": "Online","COMP 121":Graham 210,"GEEN 111":"McNair 240"}
 monthly_budget = {"Food": 450, "Entertainment": 200, "Books": 125, "Transportation": 100}
-study_hours = {"Programming": 10, "Math": 8, "English": 4, "History": 3}
-contact_directory = {"Mom": "704-555-0199", "Roommate": "336-555-7821", "Academic Advisor": "336-334-5000"}
+study_hours = {"Programming": 10, "Math": 8, "English": 4, "Other": 3}
+contact_directory = {"Mom": "910-261-5223", "Academic Advisor": "mojones@ncat.edu"}
 
 
 # 6. Required Calculations
 
-total_credits = credit_hours[0] + credit_hours[1] + credit_hours[2] + credit_hours[3]
+total_credits = credit_hours[0] + credit_hours[1] + credit_hours[2] + credit_hours[3] + credit_hours[4]+credit_hours[5]
 
-cumulative_gpa = (gpa_history[0] + gpa_history[1] + gpa_history[2] + gpa_history[3]) / 4
+cumulative_gpa = (credit_hours[0] + credit_hours[1] + credit_hours[2] + credit_hours[3] + credit_hours[4]+credit_hours[5]) / 4
 
 total_courses=len(current_courses)
 
 completed_count = len(completed_courses)
 
-total_study_hours = study_hours["Programming"] + study_hours["Math"] + study_hours["English"] + study_hours["History"]
+total_study_hours = study_hours["Programming"] + study_hours["Math"] + study_hours["English"] + study_hours["Other"]
 
 academic_load = total_credits + total_study_hours
 
@@ -99,8 +99,11 @@ print(f"Academic Investment: ${study_cost_per_hour:.1f} per study hour")
 print("\nCurrent Courses:")
 print(f"{current_courses[0]} - {course_credits['COMP 163']} credits - {course_professors['COMP 163']} - {course_rooms['COMP 163']}")
 print(f"{current_courses[1]} - {course_credits['MATH 150']} credits - {course_professors['MATH 150']} - {course_rooms['MATH 150']}")
-print(f"{current_courses[2]} - {course_credits['ENG 101']} credits - {course_professors['ENG 101']} - {course_rooms['ENG 101']}")
-print(f"{current_courses[3]} - {course_credits['HIS 105']} credits - {course_professors['HIS 105']} - {course_rooms['HIS 105']}")
+print(f"{current_courses[2]} - {course_credits['ENG 100']} credits - {course_professors['ENG 100']} - {course_rooms['ENG 100']}")
+print(f"{current_courses[3]} - {course_credits['SPCH 250']} credits - {course_professors['SPCH 250']} - {course_rooms['SPCH 250']}")
+print(f"{current_courses[3]} - {course_credits['COMP 121']} credits - {course_professors['COMP 121']} - {course_rooms['COMP 121']}")
+print(f"{current_courses[3]} - {course_credits['GEEN 111']} credits - {course_professors['GEEN 111']} - {course_rooms['GEEN 111']}")
+
 
 print("\n=== PERSONAL DEVELOPMENT ===")
 print(f"Current Skills: {current_skills}")
